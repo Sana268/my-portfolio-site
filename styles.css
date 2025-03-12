@@ -1,0 +1,617 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: url('bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.shop-now-btn {
+    display: inline-block;
+    background: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.shop-now-btn:hover {
+    background: #e60073;
+}
+
+/* Product Card Styling */
+.product {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 250px; /* Fixed width for consistency */
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+/* Product Title */
+.product h3 {
+    font-size: 1p0x;
+    margin: 10px 0;
+    white-space: normal; /* Allows text to wrap */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Product Description */
+.product p {
+    font-size: 14px;
+    color: #555;
+    white-space: normal; /* Ensures description wraps */
+    word-wrap: break-word;
+    line-height: 1.5;
+    min-height: 40px; /* Ensures consistent height */
+}
+
+.best-selling h2 {
+    text-align: center; /* Centers the text */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Best Selling Products - Horizontal Scroll */
+.best-selling-products {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.best-selling-products .product {
+    min-width: 250px; /* Ensure all products are in one line */
+    display: inline-block;
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.best-selling-products .product img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.best-selling-products::-webkit-scrollbar {
+    height: 8px; /* Thin scrollbar */
+}
+
+.best-selling-products::-webkit-scrollbar-thumb {
+    background: #ff4081;
+    border-radius: 10px;
+}
+
+.best-selling-products::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Promo Banner */
+.promo-banner {
+    text-align: center;
+    background: #ff4081;
+    color: white;
+    padding: 40px 5%;
+    margin: 40px 0;
+}
+
+.promo-banner h2 {
+    font-size: 24px;
+}
+
+.promo-banner p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* About Store Section */
+.about-store {
+    text-align: center;
+    padding: 50px 5%;
+}
+
+.about-store h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+/* Header & Navbar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Glassmorphism Effect */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+/* Logo Styling */
+.logo a {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff4081;
+    transition: color 0.3s;
+}
+
+.logo a:hover {
+    color: #da4778;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #ff4081;
+    background: rgba(255, 64, 129, 0.1);
+}
+
+/* Sign Up Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.signup-btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Sign Up Button */
+.signup-btn {
+    background: #ff4081;
+    color: white;
+}
+
+.signup-btn:hover {
+    background: #e60073;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 70px; /* Adjust based on navbar height */
+}
+
+/* Sidebar Filters */
+.sidebar {
+    width: 15%;  /* Reduced width */
+    background: white;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Product Grid */
+.products {
+    width: 80%; /* Increased width for better alignment */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+button {
+    background: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #e60073;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About Store Section */
+.about-store {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-store h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-store p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+                        /* About Page styling*/
+.about-banner {
+    background: url('about.avif') center/cover no-repeat;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.about-banner p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.about-content {
+    padding: 50px 20px;
+    background: #f8f8f8;
+}
+
+.about-content .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-image {
+    width: 45%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Values Section */
+.about-values {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.values-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.value-item {
+    background: #ff4081;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.value-item img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.value-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+                        /* SIGNUP PAGE */
+/* Background */
+.signup-container, .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+}
+
+/* Sign Up Box */
+.signup-box, .login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Title */
+.signup-box h2, .login-box h2 {
+    margin-bottom: 10px;
+    color: #ff4081;
+    font-size: 24px;
+}
+
+/* Description */
+.signup-box p, .login-box p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.signup-box input, .login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus Effect */
+.signup-box input:focus, .login-box input:focus {
+    border-color: #ff4081;
+    box-shadow: 0 0 5px rgba(255, 64, 129, 0.5);
+}
+
+/* Sign Up Button */
+.signup-box button, .login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.signup-box button:hover, .login-box button:hover {
+    background: #e60073;
+}
+
+/* Login Link */
+.signup-box p a, .login-box p a {
+    color: #ff4081;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-box p a:hover, .login-box p a:hover {
+    text-decoration: underline;
+}
+
+                    /* CONTACT PAGE */
+/* Contact Page Styling */
+.contact-banner {
+    background: url('contact.avif') center/cover no-repeat;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-banner p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contact-content {
+    padding: 50px 20px;
+    background: #f8f8f8;
+}
+
+.contact-content .container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contact-form {
+    width: 48%; /* Adjust width to fit side by side */
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content .container {
+        flex-wrap: wrap; /* Stack on smaller screens */
+    }
+
+    .contact-form, .contact-info {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e60073;
+}
+
+/* Contact Info Section */
+.contact-info {
+    width: 48%;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-info iframe {
+    border-radius: 10px;
+}
