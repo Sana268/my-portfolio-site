@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - COMSATS</title>
+    <title>Cafeteria - COMSATS</title>
     <link rel="icon" type="image/png" href="COMSATS-University-logo.png">
     <style>
         /* Page Styles */
@@ -30,16 +30,16 @@
 
         /* Header */
         .header {
-            background-color: #002147;
-	    color: white; 
+            background-color: #002147; 
+	    color: white;
             padding: 15px;
-	    display: flex;
+            display: flex;
             align-items: center;
             font-size: 24px;
             font-weight: bold;
         }
 
-       .header img {
+        .header img {
             width: 60px;
             height: 60px;
             margin-right: 25px;
@@ -78,49 +78,28 @@
             color: #FDB913;
         }
 
-        /* Form Styles */
-        form {
-            text-align: left;
-            max-width: 500px;
-            margin: auto;
-        }
-        label {
-            display: inline-block;
-            margin-right: 15px;
-            font-weight: bold;
-        }
-        input, textarea {
+        /* Table Styles */
+        table {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .radio-group {
-   	    display: grid; 
-    	    grid-template-columns:repeat(4,auto);
-	    margin-right: 15px;
-	    gap: 15px; 
-    	    align-items: center; 
-	}
-
-	.radio-group input {
-    	    margin-right: 15px; 
-	}
-
-        button {
-            background: #FDB913;
+            border-collapse: collapse;
+            background: white;
             color: black;
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 5px;
         }
-        button:hover {
-            background: #ffcc33;
+        th, td {
+            border: 1px solid #002147;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #002147;
+            color: white;
+        }
+
+        /* Image Styling */
+        .dish-img {
+            width: 100px;
+            height: 80px;
+            border-radius: 5px;
         }
 
         /* Footer */
@@ -146,50 +125,62 @@
         <a href="index.html">Home</a>
         <a href="admissions.html">Admissions</a>
         <a href="hostels.html">Hostels</a>
-        <a href="cafeteria.html">Cafeteria</a>
-        <a href="contact.html" style="border-bottom: 3px solid #FDB913;">Contact</a>
+        <a href="cafeteria.html" style="border-bottom: 3px solid #FDB913;">Cafeteria</a>
+        <a href="contact.html">Contact</a>
     </div>
 
     <!-- Main Content -->
     <div class="container">
-        <h1>Contact Us</h1>
-        <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+        <h1>University Cafeteria</h1>
+        <p>Our cafeteria offers a wide range of delicious and hygienic meals at affordable prices. Enjoy a comfortable dining experience with various seating options and a relaxing atmosphere.</p>
 
-        <!-- Contact Information -->
-        <h2>University Contact Information</h2>
-        <p><b>📍 Address:</b> COMSATS University Islamabad, Pakistan</p>
-        <p><b>📞 Phone:</b> +92-51-111-001-007</p>
-        <p><b>📧 Email:</b> info@comsats.edu.pk</p>
+        <!-- Cafeteria Table -->
+        <table>
+            <tr>
+                <th>Dish Image</th>
+                <th>Dish Name</th>
+                <th>Description</th>
+                <th>Price (PKR)</th>
+                <th>Category</th>
+            </tr>
+            <tr>
+                <td><img src="Biryani.png" class="dish-img" alt="Biryani"></td>
+                <td>Chicken Biryani</td>
+                <td>Traditional spicy rice with chicken</td>
+                <td>250</td>
+                <td>Non-Vegetarian</td>
+            </tr>
+            <tr>
+                <td><img src="roll.jpeg" class="dish-img" alt="Vegetable Roll"></td>
+                <td>Vegetable Roll</td>
+                <td>Crispy, golden-brown roll filled with a delicious mix of seasoned vegetables</td>
+                <td>100</td>
+                <td>Vegetarian</td>
+            </tr>
+            <tr>
+                <td><img src="Brownie.jpeg" class="dish-img" alt="Brownie"></td>
+                <td>Chocolate Brownie</td>
+                <td>A rich, fudgy chocolate brownie</td>
+                <td>150</td>
+                <td>Dessert</td>
+            </tr>
+	    <tr>
+		<td><img src="Tea.jpeg" class="dish-img" alt="Tea"></td>
+                <td>Milk Tea</td>
+                <td>A smooth and creamy blend of tea, milk, and sweetener,</td>
+                <td>80</td>
+                <td>Hot drink</td>
+            </tr>
+        </table>
 
-        <!-- Contact Form -->
-        <h2>Send Us a Message</h2>
-	
-        <form>
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label>Inquiry Type:</label>
-	<div class="radio-group">
-            <input type="radio" id="general" name="inquiry" value="General" checked>
-            <label for="general">General</label>
-            
-	    <input type="radio" id="admission" name="inquiry" value="Admission">
-	    <label for="admission">Admission</label>
-           
-            <input type="radio" id="hostel" name="inquiry" value="Hostel">
-            <label for="hostel">Hostel</label>
-
-            <input type="radio" id="cafeteria" name="inquiry" value="Cafeteria">
-            <label for="cafeteria">Cafeteria</label>
-	</div>
-            <label for="message">Message:</label>
-	    <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
+        <h2>Cafeteria Facilities</h2>
+        <ul>
+            <li>Dining hours: 8 AM - 10 PM</li>
+            <li>Spacious seating with air-conditioning</li>
+            <li>Separate vegetarian and non-vegetarian counters</li>
+            <li>Hygienic food preparation with fresh ingredients</li>
+            <li>Self-service and takeaway options available</li>
+        </ul>
     </div>
 
     <!-- Footer -->
