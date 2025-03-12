@@ -1,236 +1,99 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMSATS University Islamabad</title>
-    <link rel="icon" type="image/png" href="COMSATS-University-logo.png">
-    <style>
-        /* Page Background */
-        body {
-            font-family: Arial, sans-serif;
-            color: white;
-            background: url('c4.jpg') no-repeat center center fixed;
-            background-size: cover;
-            margin: 0;
-            padding: 0;
-	    position: relative;
-        }
-
-        /* Dark Overlay */
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0.4, 0.4, 0.4, 0.4);
-            z-index: -1;
-        }
-
-        /* Header */
-        .header {
-            background-color: #002147;
-            color: white;
-            padding: 15px;
-            display: flex;
-            align-items: center;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .header img {
-            width: 60px;
-            height: 60px;
-            margin-right: 25px;
-        }
-
-        /* Navigation Bar */
-        .navbar {
-            background-color: #002147;
-            text-align: center;
-            padding: 10px;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            display: inline-block;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .navbar a:hover {
-            background-color: #FDB913;
-            color: black;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 400px;
-            text-align: center;
-            padding: 100px 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero h1 {
-	    color: white;
-            font-size: 42px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-	    color: white;
-            font-size: 20px;
-            max-width: 800px;
-            margin: 10px auto;
-        }
-
-        /* CTA Button */
-        .hero .cta {
-            margin-top: 20px;
-        }
-
-        .hero a {
-            display: inline-block;
-            background: #FDB913;
-            color: black;
-            padding: 12px 20px;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: 0.3s ease;
-        }
-
-        /* Section Styling */
-        .section-container {
-            padding: 20px;
-        }
-
-        .section-heading {
-            color: #FDB913;
-            text-align: center;
-            font-size: 26px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .section {
-            background: rgba(0, 33, 71, 0.7);
-            padding: 30px;
-            margin: 10px auto;
-            border-radius: 10px;
-            max-width: 1100px;
-        }
-
-        .center-text {
-            text-align: center;
-        }
-
-        .section-content {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .section-content img {
-            width: 50%;
-            height: 250px;
-            border-radius: 5px;
-        }
-
-        /* Footer */
-        .footer {
-            background-color: #002147;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Home - SkinStore Clone</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Header with Logo -->
-    <div class="header">
-        <img src="COMSATS-University-logo.png" alt="COMSATS Logo">
-        COMSATS University Islamabad
-    </div>
-
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="index.html" style="border-bottom: 3px solid #FDB913;">Home</a>
-        <a href="admissions.html">Admissions</a>
-        <a href="hostels.html">Hostels</a>
-        <a href="cafeteria.html">Cafeteria</a>
-        <a href="contact.html">Contact</a>
-    </div>
-
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>Welcome to COMSATS University</h1>
-        <p>One of Pakistan’s leading research institutions, offering world-class education in technology, science, and business.</p>
-        <p>Join us and be a part of the future of innovation and excellence.</p>
-        <div class="cta">
-            <a href="admissions.html">Explore Programs</a>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">SKINCARE</a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <!-- About Section -->
-    <div class="section-container">
-        <h2 class="section-heading">About COMSATS</h2>
-        <div class="section center-text">
-            <p>COMSATS University Islamabad (CUI) was established in 1998 to promote research and innovation in Pakistan.</p>
-            <ul style="text-align: left; display: inline-block;">
-                <li>Founded to enhance technological advancements in Pakistan.</li>
-                <li>Offers a wide range of undergraduate and postgraduate programs.</li>
-                <li>Recognized for its research contributions at an international level.</li>
-                <li>Hosts international conferences and workshops regularly.</li>
-                <li>Committed to producing future leaders and innovators.</li>
-            </ul>
+    <!-- Hero Section with Offers -->
+    <section class="hero">
+        <h1>Exclusive Korean Beauty Collection</h1>
+        <p>Get up to <strong>50% OFF</strong> on selected skincare products!</p>
+        <a href="shop.html" class="shop-now-btn">Shop Now</a>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="best-selling">
+        <h2>Best Selling Products</h2>
+        <div class="best-selling-products">
+            <div class="product">
+                <img src="P1.jpg" alt="Product 1">
+                <h3>COSRX Snail Mucin 96% Power Repairing Essence 3.38 fl.oz 100ml</h3>
+                <p>$25.00</p>
+                <button>Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="P2.webp" alt="Product 2">
+                <h3>Medicube Collagen Overnight Wrapping Peel Off Facial Mask Pack 2.53 fl.oz</h3>
+                <p>$19.00</p>
+                <button>Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="P3.jpg" alt="Product 3">
+                <h3>Beauty of Joseon Revive Eye Serum 30ml, 1 fl.oz</h3>
+                <p>$17.00</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="P7.webp" alt="Product 7">
+                <h3>AXIS-Y Dark Spot Correcting Glow Serum 1.69 fl. oz.</h3>
+                <p>$22.00</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="P8.webp" alt="Product 8">
+                <h3>Beauty of Joseon Dynasty Cream Hydrating Face Moisturizer 50ml, 1.69 fl.oz.</h3>
+                <p>$24.00</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="P9.webp" alt="Product 9">
+                <h3>ETUDE House SoonJung 2x Barrier Intensive Cream 60ml (21AD)</h3>
+                <p>$29.00</p>
+                <button>Add to Cart</button>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Library Section -->
-    <div class="section-container">
-        <h2 class="section-heading">Library</h2>
-        <div class="section section-content">
-            <ul>
-                <li>Access to online research databases and digital libraries.</li>
-                <li>Separate reading halls for undergraduate and postgraduate students.</li>
-                <li>24/7 study rooms available for students.</li>
-                <li>Dedicated sections for research and thesis work.</li>
-                <li>Expert librarians for guidance on research material.</li>
-            </ul>
-            <img src="library.jpg" alt="Library">
-        </div>
-    </div>
+    <!-- Promotional Banner -->
+    <section class="promo-banner">
+        <h2>Get Free Shipping on Orders Above $50</h2>
+        <p>Limited time offer! Hurry up and shop now.</p>
+        <a href="shop.html" class="shop-now-btn">Shop Now</a>
+    </section>
 
-    <!-- Labs Section -->
-    <div class="section-container">
-        <h2 class="section-heading">Advanced Laboratories</h2>
-        <div class="section section-content">
-            <img src="lab.jpg" alt="Laboratories">
-            <ul>
-                <li>State-of-the-art computer labs with the latest software.</li>
-                <li>Well-equipped physics, chemistry, and engineering labs.</li>
-                <li>Dedicated AI and robotics labs for research.</li>
-                <li>High-speed internet and cloud computing access for students.</li>
-                <li>Project-based learning environment for practical exposure.</li>
-            </ul>
-        </div>
-    </div>
+    <!-- About the Store -->
+    <section class="about-store">
+        <h2>Why Choose SkinStore?</h2>
+        <p>SkinStore Pakistan offers the best Korean beauty products with high-quality ingredients and long-lasting results. We bring you a hand-picked selection of skincare, makeup, and hair care to enhance your beauty.</p>
+    </section>
 
-    <!-- Footer -->
-    <div class="footer">
-        &copy; 2025 COMSATS University. All Rights Reserved.
-    </div>
+    <footer>
+        <p>&copy; 2025 SkinStore Clone</p>
+    </footer>
 
 </body>
 </html>
